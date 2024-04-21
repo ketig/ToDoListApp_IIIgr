@@ -24,6 +24,8 @@ setTimeout(() => {
     if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove();
         saveData();
+    } else if (e.target.tagName === "LI") {
+        e.target.classList.toggle("checked");
     }
 }, false);
 }, 1000);

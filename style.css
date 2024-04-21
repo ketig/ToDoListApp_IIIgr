@@ -59,7 +59,14 @@ ul li::before{
     background-size: cover;
     top: 0;
     left: 0;
+    background-image: url(images/unchecked.png);
+}
+ul li.checked::before{
     background-image: url(images/checked.png);
+}
+ul li.checked{
+    color: gray;
+    text-decoration: line-through;
 }
 ul li span{
     position: absolute;
